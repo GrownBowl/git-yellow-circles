@@ -2,8 +2,7 @@ import sys
 
 import random
 from PyQt5 import uic
-from PyQt5.QtCore import Qt
-from PyQt5.QtGui import QPainter, QColor, QBrush, QPen
+from PyQt5.QtGui import QPainter, QColor
 from PyQt5.QtWidgets import QApplication, QMainWindow
 
 
@@ -11,7 +10,6 @@ class Example(QMainWindow):
     def __init__(self):
         super().__init__()
         self.coord = [i for i in range(500)]
-        self.radius = [i for i in range(250)]
 
         self.do_paint = False
         uic.loadUi("UI.ui", self)
